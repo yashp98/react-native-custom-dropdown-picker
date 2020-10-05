@@ -6,7 +6,7 @@
   "types": "index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hossein-zare/react-native-dropdown-picker.git"
+    "url": "git+https://github.com/yashp98/react-native-custom-dropdown-picker"
   },
   "keywords": [
     "picker",
