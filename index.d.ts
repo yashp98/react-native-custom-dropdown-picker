@@ -1,4 +1,4 @@
-declare module 'react-native-dropdown-picker' {
+declare module 'react-native-custom-dropdown' {
   import React, { ComponentType } from 'react';
   import { StyleProp, TextStyle, ViewStyle, ScrollViewProps, TextInputProps } from 'react-native';
 

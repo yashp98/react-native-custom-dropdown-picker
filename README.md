@@ -44,13 +44,13 @@ https://github.com/oblador/react-native-vector-icons
 ##### via NPM
 
 ```sh
-npm install react-native-dropdown-picker --save
+npm install react-native-custom-dropdown --save
 ```
 
 ##### via Yarn
 
 ```sh
-yarn add react-native-dropdown-picker
+yarn add react-native-custom-dropdown
 ```
 
 ### Basic Usage
@@ -58,7 +58,7 @@ yarn add react-native-dropdown-picker
 The first step is to import the package.
 
 ```javascript
-import DropDownPicker from 'react-native-dropdown-picker';
+import DropDownPicker from "react-native-custom-dropdown";
 ```
 
 #### Single
@@ -152,8 +152,8 @@ You may want to select one of the items as default.
 
 2. The `defaultValue` property.
    ```javascript
-   defaultValue = 'uk'; // Single
-   defaultValue = ['uk']; // Multiple
+   defaultValue = "uk"; // Single
+   defaultValue = ["uk"]; // Multiple
    ```
 
 ### Placeholder
@@ -256,10 +256,10 @@ in Class components you can call methods using `this.controller.METHOD_NAME()` a
 
    ```javascript
    // Single
-   this.controller.selectItem('uk');
+   this.controller.selectItem("uk");
 
    // Multiple
-   this.controller.selectItem(['uk', 'france']);
+   this.controller.selectItem(["uk", "france"]);
    ```
 
 4. Add items manually.
@@ -268,14 +268,14 @@ in Class components you can call methods using `this.controller.METHOD_NAME()` a
 
    ```javascript
    this.controller.addItem({
-     label: 'UK',
-     value: 'uk',
+     label: "UK",
+     value: "uk",
      icon: () => {},
    });
    this.controller.addItems([
      {
-       label: 'UK',
-       value: 'uk',
+       label: "UK",
+       value: "uk",
        icon: () => {},
      },
    ]);
@@ -284,16 +284,16 @@ in Class components you can call methods using `this.controller.METHOD_NAME()` a
 5. Remove items
 
    ```javascript
-   this.controller.removeItem('uk', {
+   this.controller.removeItem("uk", {
      changeDefaultValue: true, // Unselect if the removed item is the selected item
    });
    ```
 
 6. Check if the dropdown is open
 
-    ```javascript
-    this.controller.isOpen(); // boolean
-    ```
+   ```javascript
+   this.controller.isOpen(); // boolean
+   ```
 
 7. Open, close or toggle.
 
@@ -607,7 +607,7 @@ dropDownStyle={{marginTop: 2}}
 | `selectedLabelLength`            | Specify length for the selected label.                                                                           | `number`                  | `1000`                         | No       |
 | `labelLength`                    | Specify length for the labels.                                                                                   | `number`                  | `1000`                         | No       |
 | `scrollViewProps`                | Add props to the `ScrollView`                                                                                    | `object`                  | `{}`                           | No       |
-| `searchTextInputProps`                | Add props to the search `TextInput`                                                                                    | `object`                  | `{}`                           | No       |
+| `searchTextInputProps`           | Add props to the search `TextInput`                                                                              | `object`                  | `{}`                           | No       |
 | `controller`                     | Gives you access to the methods and properties.                                                                  | `func`                    | `(instance) => {}`             | No       |
 | `onOpen`                         | Fires when you open the picker.                                                                                  | `func`                    | `() => {}`                     | No       |
 | `onClose`                        | Fires when you close the picker.                                                                                 | `func`                    | `() => {}`                     | No       |

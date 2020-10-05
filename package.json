@@ -1,12 +1,12 @@
 {
-  "name": "react-native-dropdown-picker",
-  "version": "3.7.0",
+  "name": "react-native-custom-dropdown",
+  "version": "1.0.1",
   "description": "A single or multiple, searchable item picker (dropdown) component for react native which supports both Android & iOS.",
   "main": "src/index.js",
   "types": "index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yashp98/react-native-custom-dropdown-picker"
+    "url": "git+https://github.com/yashp98/react-native-custom-dropdown-picker.git"
   },
   "keywords": [
     "picker",
@@ -38,5 +38,8 @@
   "bugs": {
     "url": "https://github.com/yashp98/react-native-custom-dropdown-picker/issues"
   },
-  "homepage": "https://github.com/yashp98/react-native-custom-dropdown-picker#readme"
+  "homepage": "https://github.com/yashp98/react-native-custom-dropdown-picker#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
 }
